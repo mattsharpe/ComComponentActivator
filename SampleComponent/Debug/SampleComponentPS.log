@@ -1,0 +1,37 @@
+﻿Build started 20/03/2013 23:49:37.
+     1>Project "C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\SampleComponent\SampleComponentPS.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\SampleComponentPS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         Description: Checking for required files
+         if exist dlldata.c goto :END
+         echo Error: MIDL will not generate DLLDATA.C unless you have at least 1 interface in the main project.
+         Exit 1
+         :END
+         
+         :VCEnd
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W1 /WX- /Od /Oy- /D WIN32 /D REGISTER_PROXY_DLL /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt dlldata.c SampleComponent_i.c SampleComponent_p.c
+         SampleComponent_p.c
+         SampleComponent_i.c
+         dlldata.c
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.dll" /NOLOGO kernel32.lib rpcns4.lib rpcrt4.lib oleaut32.lib uuid.lib ole32.lib advapi32.lib comsvcs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"SampleComponentPS.def" /MANIFEST /ManifestFile:"Debug\SampleComponentPS.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.lib" /MACHINE:X86 /DLL Debug\dlldata.obj
+         Debug\SampleComponent_i.obj
+         Debug\SampleComponent_p.obj
+     1>dlldata.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+            Creating library C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.lib and object C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.exp
+         SampleComponentPS.vcxproj -> C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.dll;#2" /manifest Debug\SampleComponentPS.dll.intermediate.manifest
+       RegisterOutput:
+         regsvr32 /s "C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\Debug\SampleComponentPS.dll"
+       FinalizeBuildStatus:
+         Deleting file "Debug\SampleComponentPS.unsuccessfulbuild".
+         Touching "Debug\SampleComponentPS.lastbuildstate".
+     1>Done Building Project "C:\Users\matthews\Documents\Visual Studio 2010\Projects\ComComponentActivator\SampleComponent\SampleComponentPS.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.46

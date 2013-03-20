@@ -1,0 +1,35 @@
+// SampleComponent.idl : IDL source for SampleComponent
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SampleComponent.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(BA60A5FD-CF6B-4CFA-8748-C1276B67505B),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ITest : IDispatch{
+	[id(1)] HRESULT DoSomething(void);
+};
+[
+	uuid(9589A567-CA79-438D-832E-212F260E8B10),
+	version(1.0),
+]
+library SampleComponentLib
+{
+	importlib("stdole2.tlb");
+	[		
+		uuid(21110C90-B78E-436F-9E14-335F961529A4)		
+	]
+	coclass Test
+	{
+		[default] interface ITest;
+	};
+};
+
